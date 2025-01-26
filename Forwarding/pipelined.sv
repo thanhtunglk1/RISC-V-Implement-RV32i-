@@ -1,4 +1,4 @@
-module singlecycle(
+module pipelined(
 
   input  logic 		 i_clk, i_rst_n,
   input  logic [3:0]  i_io_btn,
