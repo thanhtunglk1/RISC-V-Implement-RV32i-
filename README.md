@@ -13,3 +13,4 @@ Include:
   - Forwarding/Always_taken (Static_prediction)
   - Forwarding/2_bit_prediction (Dynamic_prediction)
   - Forwarding/Gshare (Dynamic_prediction)
+  - Forwarding/Local (Dynamic_prediction)
