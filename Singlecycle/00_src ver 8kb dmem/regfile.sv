@@ -17,11 +17,11 @@ module regfile(
 		  registers[i] = 32'b0;
 		end
 		
-    end else if(i_rd_wren && i_rd_addr == 5'd0) registers[i_rd_addr] = i_rd_data;
+    end else if(i_rd_wren && i_rd_addr != 5'd0) registers[i_rd_addr] = i_rd_data;
 	 else registers[0] = 32'b0;
   end
 
-	assign o_rs1_data = (i_rs1_addr == 5'd0) ? registers[i_rs1_addr] : 32'b0;
-	assign o_rs2_data = (i_rs2_addr == 5'd0) ? registers[i_rs2_addr] : 32'b0;
+	assign o_rs1_data = (i_rs1_addr != 5'd0) ? registers[i_rs1_addr] : 32'b0;
+	assign o_rs2_data = (i_rs2_addr != 5'd0) ? registers[i_rs2_addr] : 32'b0;
 
 endmodule
