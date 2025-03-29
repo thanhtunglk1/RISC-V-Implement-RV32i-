@@ -2,7 +2,7 @@ module alu(
   input logic  [31:0] i_operand_a,
   input logic  [31:0] i_operand_b,
   input logic  [3:0]  i_alu_op, 
-  output logic [31:0] o_alu_data
+  output logic [31:0] o_alu_data//
 );
 
   //alu_op
